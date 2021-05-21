@@ -1,0 +1,151 @@
+body,html{
+    height: 100%;
+    margin: 15px;
+}
+.content{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 50px;
+}
+.footerinfo{
+    margin: 15px;
+    text-align: center;
+}
+.logo{
+    height: 30px;
+    width: 40px;
+    float: right;
+    margin:10px;
+}
+#card-number{
+    width: 100%;
+    margin-top: 40px;
+}
+#card_dates{
+    width: 70%;
+}
+#cvc{
+    width: 20%;
+}
+.footericon{
+    height: 30px;
+    width: 30px;
+}
+.other-info{
+    margin-top: 10px;
+    width: 115px;
+    font-weight: bold;
+}
+.picture{
+    height: 70px;
+    width: 70px;
+}
+.company-info{
+    display: flex;
+    justify-content: space-around;
+}
+input, select{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+header{
+    height: min-content;
+}
+.parentheight{
+    height: 100%;
+}
+.labels{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: max-content auto;
+}
+.labels>label{
+    color: rgb(146, 139, 139);
+}
+.labels>input, #nds{
+    max-width: 250px;;
+}
+#headerimg{
+    width: 300px;
+}
+.advice{
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.tabs>input{
+    display: none;
+}
+.tabs>div{
+    display: none;
+}
+hr{
+    background-color: Khaki;
+    height: 2px;
+}
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    font-size: 20pt;
+    cursor: pointer;
+}
+.no-margin{
+    margin-left: 0px;
+}
+.tabs>input:checked + label {
+    color: rgb(136, 77, 214);
+}
+.lowLayer>input:checked + label {
+    color:black;
+    background: rgb(243, 240, 240);
+}
+.lowLayer>label{
+    font-size: 10pt;
+}
+.product{
+    text-align: center;
+    font-size: 12pt;
+    color: rgb(90, 73, 100);
+    max-width: 200px;;
+}
+#tab_11:checked ~ #txt_11,
+#tab_21:checked ~ #txt_21,
+#tab_22:checked ~ #txt_22,
+#tab_12:checked ~ #txt_12 { display: block; }
+
+.data>input{
+    background-color: rgb(235, 229, 229);
+}
+.data{
+    background-color: rgb(235, 229, 229);
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    margin-bottom: 20px;
+    width: 400px;
+    padding: 10px;
+    min-height: 230px;
+}
+#txt_21,
+#txt_22,
+#txt_12,
+#txt_11{
+    margin-left: 7px;
+}
+button{
+    background: -moz-linear-gradient(#D0ECF4, #5BC9E1, #D0ECF4);
+   background: -webkit-gradient(linear, 0 0, 0  100%, from(rgb(240, 208, 244)), to(#D0ECF4), color-stop(0.5, rgb(219, 158, 248)));
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+   padding: 3px 7px;
+   color: #333;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid #666;
+  }
+@media (max-width: 710px){
+    .content{
+        grid-template-columns: none;
+    }
+}
